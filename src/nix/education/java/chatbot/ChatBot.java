@@ -16,8 +16,24 @@ public class ChatBot {
         System.out.println("Your age is " + age + "; that's a good time to start programming!");
         System.out.println("Now I will prove to you that I can count to any number you want.");
         int num1 = input.nextInt();
-        for(int i = 0; i < num1 + 1; i++){
+        for (int i = 0; i < num1 + 1; i++) {
             System.out.println(i + " !");
         }
+        System.out.println("\nTEST");
+        int test = 0;
+        while (test != 2) {
+            System.out.println("\nWhat year did Java appear?");
+            System.out.println("1. 1994\n2. 1995\n3. 1996\n4. 1997");
+            do {
+                test = input.nextInt();
+                if ((test < 1) || (test > 4)) {
+                    System.out.println("\nEnter from 1 to 4.");
+                }
+            } while (test < 1 || test > 4);
+            if (test != 2) {
+                System.out.println("Please, try again.");
+            }
+        }
+        System.out.println("Great, you right!");
     }
 }
