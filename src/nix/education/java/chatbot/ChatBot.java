@@ -34,6 +34,6 @@ public class ChatBot {
                 System.out.println("Please, try again.");
             }
         }
-        System.out.println("Great, you right!");
+        System.out.println("Great, you right!\nGoodbye, have a nice day!");
     }
 }
